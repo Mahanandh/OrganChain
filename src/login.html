@@ -215,7 +215,7 @@
                     showToast('Signature Verified', 'success');
                     sessionStorage.setItem('userRole', 'admin');
                     sessionStorage.setItem('userName', 'AIIMS-DELHI-01');
-                    setTimeout(() => { window.location.href = 'dashboard.html?role=admin'; }, 1000);
+                    setTimeout(() => { window.location.href = 'dashboard.html'; }, 1000);
                 } catch (error) {
                     resetBtn(btn, btnText, btnIcon, btnSpinner, originalText);
                     showToast('Connection rejected or failed.', 'error');

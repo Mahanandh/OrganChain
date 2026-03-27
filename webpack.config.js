@@ -27,6 +27,7 @@ module.exports = {
     new CopyWebpackPlugin([{ from: "./src/match-archive.html", to: "match-archive.html" }]),
     new CopyWebpackPlugin([{ from: "./src/security-logs.html", to: "security-logs.html" }]),
     new CopyWebpackPlugin([{ from: "./src/profile.html", to: "profile.html" }]),
+    new CopyWebpackPlugin([{ from: "./src/pledge-verification.html", to: "pledge-verification.html" }]),
 
 
     new CopyWebpackPlugin([{ from: "./src/images/organ-donation-logo.svg", to: "images/organ-donation-logo.svg" }]),
@@ -53,5 +54,5 @@ module.exports = {
     new CopyWebpackPlugin([{ from: "./src/images/Rahul Sabinkar.png", to: "images/Rahul Sabinkar.png" }]),
     new CopyWebpackPlugin([{ from: "./src/images/Sai Manikanta.png", to: "images/Sai Manikanta.png" }]),    
   ],
-  devServer: { contentBase: path.join(__dirname, "dist"), compress: true },
+  devServer: { contentBase: [path.join(__dirname, "dist"), path.join(__dirname, "src")], compress: true },
 };

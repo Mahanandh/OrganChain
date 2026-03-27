@@ -53,6 +53,7 @@
                 <li><a href="dashboard.html" class="nav-item nav-active"><svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Home</a></li>
                 <li><a href="about.html" class="nav-item">About</a></li>
                 <li><a href="hospitals.html" class="nav-item">Hospitals</a></li>
+                <li><a href="pledge-verification.html" class="nav-item flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-emerald-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg>Pledge Portal</a></li>
                 <li><a href="awareness.html" class="nav-item">Awareness</a></li>
                 <li><a href="faqs.html" class="nav-item">FAQs</a></li>
                 <li><a href="download-forms.html" class="nav-item">Download Forms</a></li>
@@ -89,6 +90,23 @@
                 <h1 class="text-3xl md:text-4xl font-extrabold text-white tracking-tight mb-2">Welcome back, <span id="patientName">Patient</span>.</h1>
                 <p class="text-emerald-100 font-medium text-lg max-w-2xl">Your biological metadata is secured on-chain. All records are immutably encrypted and synchronized with the national transplant registry.</p>
             </div>
+        </div>
+
+        <!-- Action Required Banner -->
+        <div class="bg-amber-50 border border-amber-200 rounded-2xl px-6 py-4 mb-6 flex items-center justify-between shadow-sm fade-up" id="pledgeBanner">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 bg-amber-100 rounded-xl flex items-center justify-center shrink-0">
+                    <svg class="w-5 h-5 text-amber-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" /></svg>
+                </div>
+                <div>
+                    <p class="text-sm font-extrabold text-amber-900 tracking-tight">Action Required — Pledge Incomplete</p>
+                    <p class="text-xs text-amber-700 font-medium">Your organ pledge has not been cryptographically verified on the national ledger.</p>
+                </div>
+            </div>
+            <a href="pledge-verification.html" class="shrink-0 ml-4 inline-flex items-center gap-1.5 px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white text-xs font-bold rounded-xl shadow transition-all active:scale-95">
+                Complete Verification
+                <svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
+            </a>
         </div>
 
         <!-- Automated Information Slideshow -->
